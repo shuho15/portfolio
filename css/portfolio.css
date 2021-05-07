@@ -1,0 +1,353 @@
+/*header*/
+.header {
+    height: 10vh;
+}
+.c-gnav {
+    display: flex;
+    float: right;
+}
+.ttl {
+    margin-left: 20px;
+    margin-right: 20px;
+    border-bottom: 1px solid rgba(46, 83, 151, 0.89);
+    font-family: 'Montserrat', sans-serif;
+}
+.ttl:hover {
+    border-bottom: none;
+    background-color: rgba(46, 83, 151, 0.212);
+}
+@media (max-width: 415px) {
+    .ttl {
+        font-size: 10px;
+        margin-left: 0px;
+    }
+}
+@media (max-width: 321px) {
+    .ttl {
+        margin-right: 15px;
+    }
+}
+
+/*toppage*/
+body {
+    width: 100%;
+    border-left: 3px solid rgb(238, 241, 6);
+}
+body * p {
+    font-size: 15px;
+}
+.toppage {
+    height: 90vh;
+    text-align: center;
+}
+.toppage {
+    display: table;
+    width: 100%;
+}
+.name-column {
+    display: table-cell;
+    vertical-align: middle;
+}
+.name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+}
+.sub-name {
+    font-size: 20px;
+}
+
+/*works*/
+.works-fullwide {
+    height: 100vh;
+    padding-top: 30px;
+    margin: 10px;
+}
+.works-columns {
+    display: flex;
+    justify-content: center;
+}
+.works-column {
+    margin: 20px;
+}
+.works-img {
+    width: 200px;
+    height: 200px;
+}
+@media (max-width: 959px) {
+    .works-fullwide {
+        height: 50vh;
+    }
+    .works-img {
+        width: 80px;
+        height: 80px;
+    }
+}
+@media (max-width: 415px) {
+    .works-fullwide {
+        height: 60vh;
+    }
+    .works-columns {
+        flex-wrap: wrap;
+    }
+    .works-column {
+        margin: 0 auto;
+    }
+}
+@media (max-width: 321px) {
+    .works-fullwide {
+        height: 80vh;
+        margin: 0px;
+    }
+}
+
+/*concept*/
+.concept-fullwide {
+    height: 100vh;
+    width: 80%;
+    margin: 50px auto;
+    font-family: serif;
+    line-height: 1.6;
+}
+.concept-title {
+    text-align: center;
+    font-size: 32px;
+    padding: 30px;
+}
+.rashisa {
+    color: rgba(46, 83, 151, 0.89);
+}
+.concept-message {
+    text-align: center;
+    font-size: 28px;
+}
+@media (max-width: 959px) {
+    .concept-fullwide {
+        height: 50vh;
+    }
+    .concept-title {
+        font-size: 28px;
+    }
+    .concept-message {
+        font-size: 22px;
+    }
+}
+@media (max-width: 415px) {
+    .concept-fullwide {
+        height: 80vh;
+        width: 80%;
+        line-height: 1.4;
+    }
+    .concept-title {
+        font-size: 20px;
+        padding: 30px 0px;
+    }
+    .concept-message {
+        font-size: 19px;
+    }
+}
+@media (max-width: 376px) {
+    .concept-fullwide {
+        height: 100vh;
+        width: 75%;
+    }
+}
+@media (max-width: 321px) {
+    .concept-fullwide {
+        height: 120vh;
+    }
+    .concept-message {
+        font-size: 18px;
+    }
+}
+
+/*about*/
+.about-fullwide {
+    height: 100vh;
+    font-family: serif;
+}
+.strength-columns, .plan-columns, .flow-columns {
+    display: flex;
+    justify-content: center;
+}
+.strength-column {
+    flex-basis: 33.3%;
+    width: 100%;
+    padding: 30px;
+    line-height: 1.6;
+}
+.about-title {
+    text-align: center;
+    color: rgba(46, 83, 151, 0.89);
+    font-size: 32px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+.about-imgs {
+    text-align: center;
+    margin: 20px auto;
+}
+.about-img {
+    width: 100px;
+}
+.plan-column {
+    flex-basis: 33.3%;
+    width: 100%;
+    padding: 30px;
+    line-height: 1.6;
+}
+.plan-text {
+    padding-left: 70px;
+}
+.double-column {
+    display: flex;
+    justify-content: center;
+    margin: 23px auto;
+}
+.double-img {
+    width: 100px;
+}
+.flow-column {
+    flex-basis: 33.3%;
+    width: 100%;
+    padding: 30px;
+    line-height: 1.6;
+}
+@media (max-width: 959px) {
+    .about-fullwide {
+        height: 30vh;
+        margin: 40vh auto;
+    }
+    .plan-text {
+        padding-left: 0px;
+    }
+    .about-title {
+        font-size: 28px;
+    }
+}
+@media (max-width: 415px) {
+    .about-fullwide {
+        margin: 0vh auto;
+    }
+    #about > div:nth-child(1){
+        height: 170vh;
+    }
+    #about > div:nth-child(2) {
+        height: 160vh;
+    }
+    #about > div:nth-child(3) {
+        height: 160vh;
+    }
+    .strength-columns, .plan-columns, .flow-columns {
+        flex-direction: column;
+    }
+    .strength-column, .plan-column, .flow-column {
+        padding: 0px;
+        margin-bottom: 30px;
+    }
+    .about-title {
+        font-size: 24px;
+        font-weight: 400;
+    }
+    .about-text {
+        padding: 20px;
+    }
+    .about-imgs, .double-imgs {
+        margin: 10px auto;
+    }
+    .about-img, .double-img {
+        width: 80px;
+    }
+    .plan-text {
+        padding-left: 120px;
+        padding-bottom: 50px;
+    }
+}
+@media (max-width: 376px) {
+    #about > div:nth-child(1){
+        height: 190vh;
+    }
+}
+@media (max-width: 321px) {
+    #about > div:nth-child(1){
+        height: 230vh;
+    }
+    #about > div:nth-child(2) {
+        height: 180vh;
+    }
+    #about > div:nth-child(3) {
+        height: 180vh;
+    }
+    .plan-text {
+        padding-left: 80px;
+    }
+}
+
+/*profile*/
+.profile-columns {
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    font-family: serif;
+    align-items: flex-end;
+    border-top: 1px solid rgb(238, 241, 6);
+}
+.profile-column-img {
+    display: table;
+    margin-right: 20px;
+}
+.profile-img {
+    width: 250px;
+    margin: 50px auto;
+}
+.profile-column {
+    display: table-cell;
+    vertical-align: middle;
+}
+.profile, .skill, .contact {
+    margin-bottom: 20px;
+}
+.profile-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+@media (max-width: 959px) {
+    .profile-columns {
+        height: 35vh;
+    }
+    .profile-column {
+        padding-right: 20px;
+    }
+}
+@media (max-width: 415px) {
+    .profile-columns {
+        display: block;
+        height: 100vh;
+    }
+    .profile-column-img {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin-right: 0px;
+    }
+    .profile-column {
+        display: table-cell;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .profile-img {
+        width: 150px;
+        margin: 50px auto;
+    }
+}
+@media (max-width: 376px) {
+    .profile-columns {
+        height: 75vh;
+    }
+}
+@media (max-width: 321px) {
+    .profile-column {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
